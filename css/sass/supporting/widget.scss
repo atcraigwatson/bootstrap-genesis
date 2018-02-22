@@ -26,8 +26,8 @@
     }
 
     // Handle the missing padding from .panel-body when no widget title is used
-    > .search-form {
-        padding: 10px 15px;
+    > :not(.panel-body) {
+        padding: 15px;
     }
 
 }
