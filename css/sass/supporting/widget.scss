@@ -25,9 +25,20 @@
         @extend .table-condensed;
     }
 
+
+    // 
+    // The two below changes show the end result style, these changes need to be
+    // applied through markup changes when possible.
+    //
+
     // Handle the missing padding from .panel-body when no widget title is used
     > :not(.panel-body) {
-        padding: 15px;
+        padding: $panel-body-padding;
+    }
+
+    // Make widget select dropdowns inherit the default Bootstrap select styles
+    select {
+        @extend .form-control;
     }
 
 }
