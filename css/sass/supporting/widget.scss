@@ -5,6 +5,10 @@
 .widget {
     @extend .clearfix;
 
+    .widget-title {
+        margin-top: 0;
+    }
+
     ul {
         padding-left: 0;
 
@@ -24,12 +28,6 @@
         @extend .table;
         @extend .table-condensed;
     }
-
-    // Handle the missing padding from .panel-body when no widget title is used
-    > .search-form {
-        padding: 10px 15px;
-    }
-
 }
 
 .widget_search {
