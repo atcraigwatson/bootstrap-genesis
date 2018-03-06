@@ -10,7 +10,7 @@ function bsg_register_sidebar_defaults($defaults) {
           'echo'    => false,
         ) ),
         'after_widget'  => genesis_markup( array(
-          'close'   => '</section>' . "\n",
+          'close'   => '</div></section>' . "\n",
           'context' => 'widget-wrap',
           'echo'    => false
         ) ),
